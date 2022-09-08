@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /** 
-* main-print using printf
+*main-print using printf
 *
-* description: usinf the main function
-* this program prints "programming is like building a multilingual puzzle"
-* Return: 0
+*description: usinf the main function
+*this program prints "programming is like building a multilingual puzzle"
+*Return: 0
 */
 int main(void)
 {
