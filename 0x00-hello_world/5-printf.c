@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-/** 
+/**
 *main-print using printf
 *
 *description: usinf the main function
