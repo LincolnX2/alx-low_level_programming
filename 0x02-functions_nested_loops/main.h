@@ -1,8 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h> 
-#include <main.h>
-#ifndef alx-low_project
-#define alx-low_project
+#ifndef HOLBERTON_H_INCLUDED
+#define HOLBERTON_H_INCLUDED
 
 int _putchar(char);
 void print_alphabet(void);
