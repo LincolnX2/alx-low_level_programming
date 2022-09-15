@@ -12,15 +12,19 @@ int main(void)
 {
 char c;
 
-c = 'A';
+for	(c = 'A')
 {
-	putchar("%c is uppercase"/n);
+	_putchar("%c is uppercase"\n,A);
 }
 
-c = 'a';
+while (c = 'a')
 {
-	putchar("%c is lowercase"/n);
+	_putchar("%c is lowercase"\n);
 }
+	
+	_putchar(",)
 
 }
-return (0);
+
+	return (0);
+}
