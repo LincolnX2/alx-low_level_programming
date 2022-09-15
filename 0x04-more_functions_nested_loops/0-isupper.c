@@ -10,21 +10,22 @@
 int main(void)
 
 {
-char c;
+_putchar(char c);
+	
 
-for	(c = 'A')
+if (c = 'A')
 {
 	_putchar("%c is uppercase"\n,A);
 }
 
-while (c = 'a')
+else (c = 'a')
 {
 	_putchar("%c is lowercase"\n);
 }
+
+	_putchar(",);
+	_putchar("\n");
+	}
 	
-	_putchar(",)
-
-}
-
-	return (0);
+return (0);
 }
