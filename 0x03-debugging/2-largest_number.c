@@ -10,19 +10,19 @@
 
 int largest_number(int a, int b, int c)
 {
-	int largest;
+int largest;
 if (a >= b && b >= c)
 {
-printf("largest = a"/n);
+printf("largest"/n,a);
 }
 else if (b >= a && a >= c)
 {
-printf("largest = b"/n)
+printf("largest"/n,b);
 }
 else
 {
-printf("largest = c"/n);
+printf("largest"/n,c);
 }
 
-	return (largest);
+return (largest);
 }
