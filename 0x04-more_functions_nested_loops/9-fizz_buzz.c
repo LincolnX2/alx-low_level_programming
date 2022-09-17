@@ -7,9 +7,8 @@
 
 int main(void)
 {
-	int h = 1;
-
-	while (h <= 100)
+int h = 1;
+while(h <= 100)
 {
 if (h % 3 == 0 && h % 5 == 0)
 	printf("FizzBuzz ");
@@ -28,6 +27,7 @@ printf("Fizz ");
 else
 printf("%d ", h);
 h++;
-
+}
 return (0);
 }
+
