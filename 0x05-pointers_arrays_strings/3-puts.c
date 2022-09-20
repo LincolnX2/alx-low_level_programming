@@ -6,7 +6,8 @@
  * @str: string input
  * Return: string
  */
-void _puts(char *str)
+
+void _puts(char *str);
 {
 	int i;
 
@@ -14,5 +15,7 @@ void _puts(char *str)
 	{
 		_putchar(str[i]);
 	}
-	_putchar('\n');
+	{
+	_putchar("\n");
+	}
 }
