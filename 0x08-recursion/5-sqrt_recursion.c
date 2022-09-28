@@ -1,5 +1,6 @@
 #include "main.h"
 #include "math.h"
+#include "stdio.h"
 
 int squareroot(int n, int i);
 /**
