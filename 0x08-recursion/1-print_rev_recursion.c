@@ -11,7 +11,7 @@ void _print_rev_recursion(char *s)
 if (*s)
 {
 _print_rev_recursion;
-putchar("%c\n", *s);
+_putchar("%c\n", *s);
 }
 
 int main(void)
