@@ -1,24 +1,23 @@
 #include "main.h"
 
 /**
- * main-a function that print reverse of a passes string.
+ * _print_rev_recursion - Entry point
  * @s:input
+ * main-Driver program to test above function
  * return 0
  */
-void _print_rev_recursion(char *s);
+void _print_rev_recursion(char *s)
 {
-unsigned char;
-
 if (*s)
 {
 _print_rev_recursion;
 putchar("%c\n", *s);
 }
-}
+
 int main(void)
 {
 char a[] = "code";
 _print_rev_recursion(a);
 return (0);
 }
-
+}
