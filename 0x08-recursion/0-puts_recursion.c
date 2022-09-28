@@ -1,18 +1,19 @@
 #include "main.h"
 
 /**
- * main-a function that prints a string.
- * using puts
- * returns value of puts
+ * _puts_recursion-a function that prints a string with a new line.
+ * @s:input
+ * Return: Always 0 (Success)
  */
 
- int puts(const char *s)
+void _puts_recursion(char *s)
 {
-unsigned puts;
-}
+	if (*s == '\0')
+		_putchar('\n');
+	else
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
 
-int main()
-{
-puts("puts with recursion");
-return (0);
 }
