@@ -8,16 +8,9 @@
  */
 void _print_rev_recursion(char *s)
 {
-if (*s)
-{
-_print_rev_recursion;
-_putchar("%c\n", *s);
-}
-
-int main(void)
-{
-char a[] = "code";
-_print_rev_recursion(a);
-return (0);
-}
-}
+	if (*s != '\0')
+		_print_rev_recursion(s + 1);
+	else
+		return;
+	_putchar(*s);
+]
