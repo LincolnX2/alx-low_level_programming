@@ -30,12 +30,12 @@ return (0);
 }
 
 /**
- *  * palindrome - checks if start and end of string matches
- *   * @str: string
- *    * @st: start of string 0
- *     * @end: end of string from is_palindrome, from lengthc
- *      * Return: if str is a palindrome
- *       */
+ * palindrome - checks if start and end of string matches
+ * @str: string
+ * @st: start of string 0
+ * @end: end of string from is_palindrome, from lengthc
+ * Return: if str is a palindrome
+ */
 int palindrome(char str[], int st, int end)
 {
 if (st >= end)
