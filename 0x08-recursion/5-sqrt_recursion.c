@@ -1,29 +1,31 @@
 #include "main.h"
 
-/** 
- * sqrt2 - Makes possible to evaluate from 1 to n
- * @a: same number as n
- * @b: number that iterates from 1 to n
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+int prime_checker(int n, int i);
+/**
+ * is_prime_number - executes prime_checker
+ * @n: input to check
+ * Return: Always 0 (Success)
  */
-int sqrt2(int a, int b)
+int is_prime_number(int n)
 {
-	if (b * b == a)
-		return (b);
-	if (b * b > a)
-		return (-1);
-		return (sqrt2(a, b + 1));
+	if (n <= 1)
+		return (0);
+	else if (prime_checker(n, n / 2) > 0)
+		return (1);
+	return (0);
 }
 /**
- * _sqrt_recursion - returns the natural square root of n
- * @n: Number Integer
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * prime_checker - checks for prime
+ * @n: input to check
+ * @i: n / 2, then passes to i - 1, checks if greater than 0
+ * Return: prime check
  */
-int _sqrt_recursion(int n)
+int prime_checker(int n, int i)
 {
-	return (sqrt2(n, 1));
+	if (i == 1)
+		return (1);
+	if (n % i == 0)
+		return (0);
+else
+		return (prime_checker(n, i - 1));
 }
