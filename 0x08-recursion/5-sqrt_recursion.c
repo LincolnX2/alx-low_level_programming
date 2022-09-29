@@ -2,31 +2,31 @@
 #include "stdio.h"
 #include "math.h"
 
-int prime_checker(int n, int i);
+int squareroot(int n, int i);
 /**
- * is_prime_number - executes prime_checker
- * @n: input to check
+ * _sqrt_recursion - no loop, 1. 2nd function - checks for perfect square
+ * @n: input
  * Return: Always 0 (Success)
  */
-int is_prime_number(int n)
+int _sqrt_recursion(int n)
 {
-	if (n <= 1)
-		return (0);
-	 if (prime_checker(n, n / 2) > 0)
-		return (1);
-	return (0);
+		if (n < 0)
+					return (-1);
+			else
+						return (squareroot(n, (n + 1) / 2));
 }
 /**
- * prime_checker - checks for prime
- * @n: input to check
- * @i: n / 2, then passes to i - 1, checks if greater than 0
- * Return: prime check
+ * squareroot - checks if perfect square
+ * @n: input
+ * @i: counter
+ * Return: if square root
  */
-int prime_checker(int n, int i)
+int squareroot(int n, int i)
 {
-	if (i == 1)
-		return (1);
-	if (n % i == 0)
-		return (0);
-		return (prime_checker(n, i - 1));
+		if (i < 1)
+					return (-1);
+			else if (i * i == n)
+						return (i);
+				else
+							return (squareroot(n, i - 1));
 }
