@@ -8,7 +8,8 @@
  */
 int main(int argc, __attribute__((unused)) char *argv[])
 {
-	int i;
+int i;
+
 	for (i = 0; i < argc; i++)
 		{
 		}
