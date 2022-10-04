@@ -16,12 +16,11 @@ unsigned int i;
 
 	array = malloc(sizeof(char) * size);
 
-	if (size == 0 || array == NULL)
+if (size == 0 || array == NULL)
+	return (NULL);
 
-			return (NULL);
-
-	for (i = 0; i < size; i++)
-			array[i] = c;
+for (i = 0; i < size; i++)
+	array[i] = c;
 
 	return (array);
 }
