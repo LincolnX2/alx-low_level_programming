@@ -1,6 +1,6 @@
 0x0B. C - malloc, free
  
-it is the difference between automatic and dynamic allocation
+What is the difference between automatic and dynamic allocation
 
 What is malloc and free and how to use them
 
