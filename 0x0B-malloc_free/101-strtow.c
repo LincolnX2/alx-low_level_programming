@@ -94,9 +94,9 @@ char **strtow(char *str)
 	}
 	}
 	split[words] = NULL;
-			return (split);
+	return (split);
 	}
 	else
-		return (NULL);
+	return (NULL);
 	
 }
