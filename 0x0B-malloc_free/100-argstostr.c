@@ -13,7 +13,7 @@ int len(char *str)
 
 	{
 	while (str[len])
-																len++;
+		len++;
 	}
 	return (len);
 }
@@ -50,9 +50,10 @@ char *argstostr(int ac, char **av)
 		}
 		new_string[temp] = '\0';
 	}
+
 	else
 	{
-		return(NULL);
+		return (NULL);
 	}
-		return(new_string);
+		return (new_string);
 }
