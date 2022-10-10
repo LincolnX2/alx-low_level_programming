@@ -3,6 +3,6 @@
 
 #define SIZE 1024
 
-typedef int make_iso_compilers_happy;
+_putchar("%d\n", SIZE);
 
 #endif /* OBJECT_LIKE_MACRO_H */
