@@ -1,6 +1,6 @@
 #ifndef FUNCTION_LIKE_MACRO
 #define FUNCTION_LIKE_MACRO
-#include <stdlib>
+#include <stdio.h>
 
 #define ABS(x) (x * ((x < 0) * (-1) + (x > 0)))
 
