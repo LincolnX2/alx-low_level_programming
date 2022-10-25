@@ -23,6 +23,7 @@ if (index == 0)
 	*head = temp;
 return (1);
 	}
+
 while (copy != NULL)
 	{
 if (count + 1 == index)
