@@ -1,16 +1,33 @@
-#include "main.h'
-#include <stdio.h>
-
+#include "main.h"
 /**
- * print_binary - function that prints the binary representation of a number.
- * @n: number to convert into binary representation
- *
+ * print_binary - Entry Point
+ * @n: dec input
+ * Return: 0
  */
 void print_binary(unsigned long int n)
 {
-	if (n > 1)
+	int i = 0, count, k, temp;
+
+	if (n == 0)
 	{
-		print_binary(n >> 1);
+		printf("0");
+		return;
 	}
-	_putchar((n & 1) + '0');
+
+	temp = n;
+
+	while (temp != 0)
+	{
+		i++;
+		temp = temp >> 1;
+	}
+
+	for (count = i - 1; count >= 0; count--)
+	{
+		k = n >> count;
+		if (k & 1)
+			printf("1");
+		else
+			printf("0");
+	}
 }
