@@ -1,4 +1,4 @@
-#include "main.H"
+#include "main.h"
 
 /**
  * get_bit - Entry Point
